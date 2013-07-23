@@ -3,96 +3,229 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My First Bitstarter</title>
+		<meta name="viewport"  content="width=device-width, initial-scale=1.0" >
+		<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
 		<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+		<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+		<link type="text/css" src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-		body{
-			padding-top:20px;
-			padding-bottom:40px;
+		@media (min-width: 980px) {
+			body{
+				padding-top:60px;
+			}
+			.leftblock{
+				border-right: 1px white solid;
+			}
+			.rightblock{
+				border-left: solid 1px white;
+			}
+			
 		}
-		.navigation,.pitch,.section1,.section2, .faq, .footer{
-			padding-top:10px;
-			padding-bottom:10px;
+		@media (max-width: 480px) {
+			body{
+				padding-top: 60px;
+			}
+			.leftblock{
+				margin-bottom: solid 1px white;
+			}
+			.rightblock{
+				margin-top: solid 1px white;
+			} 
 		}
-		.container{
-			width:960px;
+		.pitch{
+			padding: 2.5% 0%;
 		}
-		.video,.thermometer,.order,.social{
-			border:1px dotted;
-			text-align:center;
+		.actions{
+			background-color: #343434;
+			padding: 1% 0%;
 		}
-		.video{
-			height:124px;/*lines have 4px so 124px*/
-			line-height:124px;/*to center align*/
+		.order{
+			padding: 2% 0%;
 		}
-		.thermometer,.order,.social{
-			height:40px;
-			line-height:40px;
+		.thermometer, .order, .social, .statistics{
+			text-align: center;
+		}
+		.thermometer{
+			height: 14px;
+			margin: 5% 0%;
+		}
+		.statistics h3,.statistics p{
+			color: white;
+		}
+		
+		p{
+			font-size: 18px;
+			line-height: 24px;
 		}
 		p.lead{
-			padding-top:15px;
+			padding-top:1.5%;
+			font-size: 24px;
+			line-height: 30px;
 		}
-		div.row{
-			border: 1px solid;
+		.pic1, .pic2{
+			padding: 2.5% 0%;
+		}
+		.copy{
+			padding: 2.5% 0%;
+			text-align: justify;
+		}
+		.heading, .subheading{
+			font-family: 'Ubuntu', sans-serif;
+			text-align: center;
+		}		
+		.footer{
+			color: #cccccc;
+			text-align: center;
+			font-size: 11px;
 		}
 		</style>
 	</head>
 	<body>
+
+		<!-- Mobile fiendly navigation bar adapted from starter template -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+			        <div class="container">
+	  		           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			           </button>
+			           <a class="brand" href="#">Project name</a>
+				   <div class="nav-collapse collapse">
+			              <ul class="nav">
+				              <li class="active"><a href="#">Home</a></li>
+				              <li><a href="#about">About</a></li>
+				              <li><a href="#contact">Contact</a></li>
+				      </ul>
+				   </div><!--/.nav-collapse -->
+			        </div>
+		      </div>
+		</div>
+		
 		<div class="container">
-			<div class="row navigation">
-				<div class="span2 logo">
-				Logo
-				</div>
-				<div class="span6 blank">
-				Blank
-				</div>
-				<div class="span4 about">
-				About
-				</div>
-			</div>
-			<div class="row heading">
+
+			<div class="row-fluid heading">
 				<div class="span12">
-					<h1>Yet to be decided</h1>
+					<h1>Data Science</h1>
 				</div>
 			</div>
-			<div class="row subheading">
+
+			<div class="row-fluid subheading">
 				<div class="span12">
-					<p class="lead">My first Bitstarter project</p>
+					<p class="lead">It's Data! It's Science!</p>
 				</div>
 			</div>
-			<div class="row pitch">
-				<div class="span6 video">
-					Video
+
+			<div class="row-fluid pitch">
+				<div class="span5 offset1 video">
+					<img class="img-polaroid" src="http://placehold.it/480X300">
 				</div>
-				<div class="span6">
-					<div class="thermometer">
-						Thermometer
+
+				<div class="span5 actions">
+					<div class="span10 offset1">
+						<div class="statistics">
+							<div class="span4 leftblock">
+								<h3>1000</h3><p>backers</p>
+							</div>
+							<div class="span4 centerblock">
+								<h3>$6000</h3><p>of $10000</p>
+							</div>
+							<div class="span4 rightblock">
+								<h3>10</h3><p>day left</p>
+							</div>
+						</div>
 					</div>
-					<div class="order">
-						Order
+
+
+					<div class="span10 offset1">
+					    <div class="thermometer">
+						<div class="progress active">
+							<div class="bar bar-success" style="width: 60%;"></div>
+							<div class="bar bar-warning" style="width: 40%;"></div>
+						</div>
+					    </div>
 					</div>
-					<div class="social">
-						Social
+					
+					<div class="span6 offset3 order">
+						<button class="btn btn-success btn-large">Preorder</button>
 					</div>
+
+					<div class="span8 offset2 social">
+						<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+						 <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+					</div>
+
 				</div>
 			</div>
-			<div class="row section1">
-				<div class="span12">
-					Marketing Section 1
+
+			<div class="row-fluid section1">
+				<div class="span5 offset1 pic1">
+					<img class="img-polaroid" src="http://placehold.it/480X300">
+				</div>
+				<div class="span5 copy">
+				<p>
+				The main Preorder button is straightforward; we 
+use the built in Bootstrap button class. For the 
+social buttons we need to use bootstrap-social-buttons and this forces a FontAwesome import 
+as well (both of which are in the).
+http://twitter.github.io/bootstrap/base-css.html#buttons 
+http://noizwaves.github.io/bootstrap-social-buttons
+				</p>
 				</div>
 			</div>
-			<div class="row section2">
-				<div class="span12">
-					Marketing Section 2
+			<div class="row-fluid section2">
+				<div class="span5 offset1 copy">
+				<p>
+				The main Preorder button is straightforward; we 
+use the built in Bootstrap button class. For the 
+social buttons we need to use bootstrap-social-buttons and this forces a FontAwesome import 
+as well (both of which are in the head).
+http://twitter.github.io/bootstrap/base-css.html#buttons 
+http://noizwaves.github.io/bootstrap-social-buttons
+				</p>
+				</div>
+				<div class="span5 pic2">
+					<img class="img-polaroid" src="http://placehold.it/480X300">
 				</div>
 			</div>
-			<div class="row faq">
-				<div class="span12">
-					FAQ
+			<div class="row-fluid faq">
+				<div class="span10 offset 1">
+					<h3>FAQ</h3>
+					<div class="accordion" id="accordion1">
+					  <div class="accordion-group">
+					    <div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="accordion1" href="#collapseOne">What does FAQ stand for?</a>
+					   </div>
+					   <div id="collapseOne" class="accordion-body collapse">
+					     <div class="accordion-inner">
+						Frequenly Asked Questions 
+					     </div>
+					   </div>
+					 </div>
+					</div>
+					<div class="accordion" id="accordion2">
+                                          <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse
+Two">What's a Frequently Asked Question?</a>
+                                           </div>
+					   <div id"collapseTwo" class="accordion-body collapse">
+                                             <div class="accordion-inner">
+                                                People Ask Frequenly Asked Questions
+                                             </div>
+					   </div>
+                                         </div>
+                                        </div>
 				</div>
 			</div>
-			<div class="row footer">
+
+			<div class="row-fluid footer">
 				<div class="span12">
-					Footer
+				<p>License held by abhinit06</p>
 				</div>
 			</div>
 		</div>
