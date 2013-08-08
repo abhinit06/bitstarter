@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My First Bitstarter</title>
+		<meta name="viewport"  content="width=device-width, initial-scale=1.0" >
+		<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+		<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+		<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+		<link type="text/css" src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		@media (min-width: 980px) {
+			body{
+				padding-top:60px;
+			}
+			.leftblock{
+				border-right: 1px white solid;
+			}
+			.rightblock{
+				border-left: solid 1px white;
+			}
+			
+		}
+		@media (max-width: 480px) {
+			body{
+				padding-top: 60px;
+			}
+			.leftblock{
+				margin-bottom: solid 1px white;
+			}
+			.rightblock{
+				margin-top: solid 1px white;
+			} 
+		}
+		.form{
+
+			margin-top: 25px;
+			margin-bottom: 15px;
+		}
+		.heading, .subheading{
+			font-family: 'Ubuntu', sans-serif;
+			text-align: center;
+		}		
+		.footer{
+			color: #cccccc;
+			text-align: center;
+			font-size: 11px;
+		}
+		</style>
+	</head>
+	<body>
+
+		<!-- Mobile fiendly navigation bar adapted from starter template -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+			        <div class="container">
+	  		           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			           </button>
+			           <a class="brand" href="#">Thank You app</a>
+				   <div class="nav-collapse collapse">
+			              <ul class="nav">
+				              <li><a href="/">Home</a></li>
+				              <li class="active"><a href="#">Contact</a></li>
+				      </ul>
+				   </div><!--/.nav-collapse -->
+			        </div>
+		      </div>
+		</div>
+		
+		<div class="container">
+
+			<div class="row-fluid subheading">
+				<div class="span12">
+					<p class="lead">Have a question? a suggestion?<br/>Just fill up the form below and we will get back to you.</p>
+				</div>
+			</div>
+
+			<div class="row-fluid form">
+				<div class="span4 offset4 fields">
+					<form name="input" action="html_form_action.php" method="get">
+						Email: <input type="text" name="email"><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<textarea name="text" rows="5">Your query/suggestion</textarea><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<button type="submit" class="btn">Submit</button>
+					</form> 
+				</div>
+			</div>
+
+			<div class="row-fluid footer">
+				<div class="span12">
+				<p>License held by abhinit06</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

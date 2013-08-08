@@ -12,6 +12,14 @@ app.get('/', function(request, response) {
   response.end();
 });
 
+app.get('/contactus.html', function(request,response){
+  console.log("Received a request for contact");
+  fbuffer = fs.readFileSync('contactus.html');
+  resp = fbuffer.toString();
+  response.send(resp);
+  response.end();
+});
+
 var port = process.env.PORT || 8888;
 app.listen(port, function() {
   console.log("Listening on " + port);
